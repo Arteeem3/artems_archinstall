@@ -51,7 +51,7 @@ class UserList(ListManager):
 		return data
 
 	def _check_for_correct_username(self, username: str) -> bool:
-		if re.match(r'^[a-z_][a-z0-9_-]*\$?$', username) and len(username) <= 32:
+		if re.match(r'^[A-z_][a-z0-9_-]*\$?$', username) and len(username) <= 32:
 			return True
 		return False
 
